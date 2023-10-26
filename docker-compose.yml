@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  game-slots:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: game-slots:latest
+    container_name: game-slots-app
+    ports:
+      - "8080:8080"
